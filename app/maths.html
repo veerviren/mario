@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../background.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+
+    <nav>
+        <label class="logo"> Mario </label>
+        <ul>
+            <li><a class="active" href="./maths.html">Home</a></li>
+            <li><a class="active" href="../about.html">About</a></li>
+            <li><a class="active" href="../contact.html">Contact</a></li>
+            <li><a class="active" onclick="myFunction()"> Toggle dark mode</a></li>
+        </ul>
+    </nav>
+
+    <div class="start_btn"><button>Start Game</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Rules of this Mario game</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>3 life</span> per emeny victory.</div>
+            <div class="info">2. Using arrow keys you can move around all direction.</div>
+            <div class="info">3. You can toggle between light and dark mode during game play.</div>
+            <div class="info">4. Game contained multipull levels.</div>
+            <div class="info">5. Enjoy the game.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Game</button>
+            <!-- <button class="restart" onclick="">Start</button> -->
+            <form action="./mario/index.html">
+                <input style="color: #fff;background: #1aff66; width: 90px; height: 35px;" class="restart" type="submit" value="Start"/>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

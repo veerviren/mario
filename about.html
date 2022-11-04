@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- <link rel="icon" href="indian2.png" type="image/png"> -->
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="background.css">
+    
+</head>
+<body>
+    <body>
+        <nav>
+            <label class="logo"> Quiz </label>
+            <ul>
+                <li><a class="active" href="app/maths.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="active" onclick="myFunction()"> Toggle dark mode</a></li>
+            </ul>
+        </nav>
+        <center>
+        <div class="container">
+            
+            <div class="card">
+                <!-- <div class="img"></div> -->
+                <img class="img" src="profile.png">
+                <div class="content">
+                    
+                    <h2>About developer</h2>
+                    <h3>It is a website created by :'Viren Variya Jitendrakumar' of Lovely Professional university under a given project. It is a website for Mario Game custom version which can be used as a website for entertenment pourpus to play and have lots of fun</h3>
+                </div>
+            </div>
+        </div>
+        </center>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </body>
+</body>
+</html>
